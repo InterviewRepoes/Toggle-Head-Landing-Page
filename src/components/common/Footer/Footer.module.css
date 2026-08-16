@@ -1,0 +1,72 @@
+.bg_color {
+    background-color: #092852;
+    color: #fff;
+}
+
+.bg_color * {
+    color: #fff;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.gap {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.bottom_bar {
+    background-color: #002F5F;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 16px 0;
+    text-align: center;
+}
+
+.bottom_bar * {
+    color: #fff;
+}
+
+.footer_padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.contact_card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact_card a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.follow_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social_icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 12px;
+}
+
+.social_icons a {
+    font-size: 25px;
+    color: #fff;
+    transition: opacity 0.2s ease;
+}
+
+.social_icons a:hover {
+    opacity: 0.7;
+}
