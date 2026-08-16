@@ -1,30 +1,37 @@
 import React from 'react'
 import style from "../Form/Form.module.css"
 import form_bg from "../../../assets/Form/form_bg.png"
+
 const Form = () => {
   return (
     <>
-      <div className="container">
-        <div className="flex align_center">
-          <div className={`${style.gap} left flex flex_col`}>
-            <h3 className={style.text_color}>
-              Subscribe
-            </h3>
-            <p className={style.text_size}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum sapiente nam doloribus inventore quis explicabo nobis quaerat nulla, hic veniam magna</p>
-            <form>
-              <div className="flex ">
-                <input type="text" className={`${style.w_full}`} placeholder='Enter Your Email Address' />
-                <button>
+      <section className={style.subscribe_section}>
+        <div className="container">
+          <div className={style.subscribe_wrapper}>
+            <div className={style.subscribe_left}>
+              <h2 className={style.subscribe_heading}>Subscribe</h2>
+              <p className={style.subscribe_desc}>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                nonumy eirmod tempor invidunt ut labore et dolore magna
+              </p>
+              <form className={style.subscribe_form} onSubmit={(e) => e.preventDefault()}>
+                <input
+                  type="email"
+                  className={style.email_input}
+                  placeholder="Enter your Email Address"
+                />
+                <button type="submit" className={style.subscribe_btn}>
                   Subscribe Now
-                </button> 
-              </div>
-            </form>
-          </div>
-          <div className="right ">
-            <img src={form_bg} alt="" className={`${style.img} `} />
+                </button>
+              </form>
+            </div>
+            <div className={style.subscribe_right}>
+              <img src={form_bg} alt="Subscribe" className={style.subscribe_img} />
+            </div>
+
           </div>
         </div>
-      </div >
+      </section>
     </>
   )
 }
