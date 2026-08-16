@@ -1,13 +1,15 @@
 import React from 'react'
+import Header from '../common/Header/Header'
 import Form from '../layout/Form/Form'
 import Testimonial from '../layout/Testimonial/Testimonial'
 import FAQ from '../layout/FAQ/FAQ'
 import Footer from '../common/Footer/Footer'
+
 const Home = () => {
 
   return (
     <>
-
+      <Header />
       <Testimonial />
       <FAQ />
       <Form />

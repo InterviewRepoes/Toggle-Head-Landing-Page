@@ -1,0 +1,69 @@
+.header {
+    background-color: #12406F;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.nav_link {
+    color: #ddd7d7;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.logo {
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+}
+
+.navbar {
+    justify-content: space-between;
+}
+
+.gap {
+    gap: 32px;
+}
+
+.nav {
+    display: flex;
+    gap: 26px;
+}
+
+.gap_navabar {
+    gap: 5px;
+}
+
+.enrolment_btn {
+    background-color: #fff;
+    padding: 10px 20px;
+    color: #12406F;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 800;
+}
+
+.search_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #12406F;
+    border: none;
+    border-radius: 8px;
+    padding: 9px 10px;
+    cursor: pointer;
+}
+
+.search_icon {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.chevron {
+    font-size: 9px;
+    color: #ddd7d7;
+}
+
+.ingap {
+    gap: 10px;
+}

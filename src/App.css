@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'FSAlbert', sans-serif;
 }
 
 .flex {
@@ -32,6 +32,7 @@
 .container {
   max-width: 1100px;
   margin: 0 auto;
+  padding: 0px 10px;
 }
 
 .flex_col {
@@ -49,4 +50,8 @@
 
 .text-left {
   text-align: left;
+}
+
+.text_none {
+  text-decoration: none;
 }
