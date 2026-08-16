@@ -2,4 +2,42 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+
+}
+
+.flex {
+  display: flex;
+}
+
+.justify_center {
+  justify-content: center;
+}
+
+.align_center {
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.left {
+  width: 50%;
+}
+
+.right {
+  width: 50%;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.flex_col{ 
+  flex-direction: column;
+}
+.flex_row{ 
+  flex-direction: row;
 }
