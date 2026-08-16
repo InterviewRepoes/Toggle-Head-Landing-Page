@@ -1,0 +1,42 @@
+.section {
+    background-color: #f0f2f5;
+    padding: 60px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.label {
+    font-size: 14px;
+    color: #1a3a6b;
+    font-weight: 400;
+}
+
+.number {
+    font-size: 48px;
+    font-weight: 700;
+    color: #1a3a6b;
+    line-height: 1.1;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a3a6b;
+}
+
+.description {
+    font-size: 14px;
+    color: #4a5568;
+    line-height: 1.6;
+    margin-top: 4px;
+}
