@@ -1,6 +1,7 @@
 import React from 'react'
 import style from "../Form/Form.module.css"
 import form_bg from "../../../assets/Form/form_bg.png"
+import { MdArrowRight } from "react-icons/md";
 
 const Form = () => {
   return (
@@ -22,6 +23,8 @@ const Form = () => {
                 />
                 <button type="submit" className={style.subscribe_btn}>
                   Subscribe Now
+                  <MdArrowRight className={style.arrow_icon} />
+
                 </button>
               </form>
             </div>

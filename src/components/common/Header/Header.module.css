@@ -2,8 +2,9 @@
     background-color: #12406F;
     padding-top: 13px;
     padding-bottom: 13px;
-    position: relative;
     z-index: 100;
+    position: sticky;
+    top: 0;
 }
 
 .nav_link {

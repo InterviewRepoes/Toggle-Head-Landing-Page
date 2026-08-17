@@ -1,0 +1,143 @@
+.section {
+    background-color: #fff;
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.left {}
+
+.heading {
+    font-size: 24px;
+    font-weight: 700;
+    color: #12406F;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+
+.subtext {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.divider {
+    width: 1px;
+    align-self: stretch;
+    background-color: #d0d6e0;
+    margin: 0 32px;
+    flex-shrink: 0;
+}
+
+.exams_row {
+    display: flex;
+    gap: 142px;
+}
+
+.exam_item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.icon_row {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    margin-bottom: 6px;
+    color: #12406F;
+    font-size: 18px;
+}
+
+.cal_icon {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.clock_icon {
+    font-size: 16px;
+    color: #12406F;
+}
+
+.date {
+    font-size: 14px;
+    font-weight: 700;
+    color: #12406F;
+}
+
+.line {
+    font-size: 14px;
+    margin-top: 4px;
+    color: #555;
+}
+
+@media (max-width: 900px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        padding: 0 4px;
+    }
+
+    .divider {
+        width: 100%;
+        height: 1px;
+        margin: 0;
+        align-self: auto;
+    }
+
+    .left {
+        padding-right: 0;
+    }
+
+    .exams_row {
+        gap: 28px;
+        flex-wrap: wrap;
+    }
+
+    .exam_item {
+        flex: 1 1 calc(50% - 14px);
+        min-width: 150px;
+    }
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        gap: 20px;
+    }
+
+    .exams_row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .exam_item {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+
+    .heading {
+        font-size: 20px;
+    }
+
+    .cal_icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .date {
+        font-size: 13px;
+    }
+
+    .line {
+        font-size: 13px;
+    }
+}

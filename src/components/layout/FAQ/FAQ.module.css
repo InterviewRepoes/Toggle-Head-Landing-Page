@@ -1,6 +1,6 @@
 .section {
     background-color: #fff;
-    padding: 60px 0;
+    padding: 46px 0;
 }
 
 .heading {
@@ -30,7 +30,7 @@
 }
 
 .question {
-    font-size: 15px;
+    font-size: 13px;
     color: #333;
     font-weight: 400;
     flex: 1;
