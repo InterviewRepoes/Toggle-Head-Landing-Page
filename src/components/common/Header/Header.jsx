@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import style from './Header.module.css'
-import { FaChevronDown, FaMagnifyingGlass } from 'react-icons/fa6'
+import { FaChevronDown, FaBars, FaXmark } from 'react-icons/fa6'
 import { FaSearch } from "react-icons/fa";
 
 const navLinks = [
@@ -12,16 +12,25 @@ const navLinks = [
 ]
 
 const Header = () => {
+    const [menuOpen, setMenuOpen] = useState(false)
 
     return (
         <header className={style.header}>
             <div className={`container ${style.navbar} flex align_center`}>
                 <div className={style.logo}>LOGO</div>
 
-                <div className={`${style.gap} flex `}>
+                <button
+                    className={style.hamburger}
+                    onClick={() => setMenuOpen(!menuOpen)}
+                    aria-label="Toggle menu"
+                >
+                    {menuOpen ? <FaXmark /> : <FaBars />}
+                </button>
+
+                <div className={`${style.nav_wrapper} ${menuOpen ? style.nav_open : ''}`}>
                     <nav className={style.nav}>
                         {navLinks.map((link, index) => (
-                            <a key={index} href="#" className={`${style.nav_link} ${style.gap_navabar} flex align_center  text_none`}>
+                            <a key={index} href="#" className={`${style.nav_link} ${style.gap_navabar} flex align_center text_none`}>
                                 {link.label}
                                 <FaChevronDown className={style.chevron} />
                             </a>
@@ -36,7 +45,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-        </header >
+        </header>
     )
 }
 

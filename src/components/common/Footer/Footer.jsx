@@ -16,7 +16,7 @@ import footer_img from "../../../assets/Footer/footer.png"
 const Footer = () => {
     return (
         <>
-            <div className={`${style.bg_color}  `}>
+            <div className={`${style.bg_color}  relative`}>
                 <img src={footer_img} className={`${style.img} absolute`} alt="" />
                 <div className={`${style.footer_padding} container relative  index`}>
                     <div className={`${style.grid}`}>
@@ -38,7 +38,7 @@ const Footer = () => {
                         </div>
 
                         <div className={`follow_card ${style.follow_card}`}>
-                            <h4 className={`${style.heading} text-center`}>Follow Us</h4>
+                            <h4 className={`${style.heading} text-center`}>Follow us</h4>
                             <div className={`${style.social_icons}`}>
                                 <a href=""><FaFacebook /></a>
                                 <a href=""><FaLinkedin /></a>
@@ -49,7 +49,7 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        <div className="head_office">
+                        <div className={`${style.head_office}`}>
                             <h4>Head Office</h4>
 
                             <div className={`${style.gap}`}>
@@ -62,7 +62,7 @@ const Footer = () => {
                                 </div>
 
                                 <div className={`${style.office_gap} flex gap`}>
-                                    <FaClock />
+                                    <FaRegClock />
                                     <p>
                                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr
                                     </p>

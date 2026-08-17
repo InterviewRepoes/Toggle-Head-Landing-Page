@@ -2,6 +2,8 @@
     background-color: #12406F;
     padding-top: 13px;
     padding-bottom: 13px;
+    position: relative;
+    z-index: 100;
 }
 
 .nav_link {
@@ -19,9 +21,16 @@
 
 .navbar {
     justify-content: space-between;
+    position: relative;
 }
 
 .gap {
+    gap: 32px;
+}
+
+.nav_wrapper {
+    display: flex;
+    align-items: center;
     gap: 32px;
 }
 
@@ -66,4 +75,92 @@
 
 .ingap {
     gap: 10px;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    padding: 4px;
+    line-height: 1;
+}
+
+@media (max-width: 900px) {
+    .nav {
+        gap: 16px;
+    }
+
+    .nav_wrapper {
+        gap: 16px;
+    }
+
+    .nav_link {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav_wrapper {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #12406F;
+        padding: 16px 20px 24px;
+        z-index: 99;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    }
+
+    .nav_open {
+        display: flex;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 14px;
+        width: 100%;
+        padding-bottom: 16px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .nav_link {
+        font-size: 14px;
+        width: 100%;
+        padding: 4px 0;
+    }
+
+    .ingap {
+        padding-top: 16px;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .enrolment_btn {
+        padding: 9px 18px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 18px;
+    }
+
+    .enrolment_btn {
+        padding: 8px 14px;
+        font-size: 13px;
+    }
 }
