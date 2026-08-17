@@ -3,9 +3,6 @@
     color: #fff;
 }
 
-.bg_color * {
-    color: #fff;
-}
 
 .grid {
     display: grid;
@@ -26,10 +23,6 @@
     text-align: center;
 }
 
-.bottom_bar * {
-    color: #fff;
-}
-
 .footer_padding {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -39,11 +32,12 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+
 }
 
 .contact_card a {
-    display: block;
-    color: #fff;
+    font-size: 14px;
+    color: #c3c0c0;
     text-decoration: none;
 }
 
@@ -69,4 +63,22 @@
 
 .social_icons a:hover {
     opacity: 0.7;
+}
+
+/* h4 {
+    margin-bottom: 20px;
+} */
+
+p {
+    font-size: 12px;
+    color: #c3c0c0;
+}
+
+.office_gap {
+    gap: 10px;
+}
+
+.img {
+    width: 70%;
+    bottom: 0;
 }

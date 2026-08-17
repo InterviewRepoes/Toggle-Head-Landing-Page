@@ -55,3 +55,15 @@
 .text_none {
   text-decoration: none;
 }
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.index {
+  z-index: 10;
+}

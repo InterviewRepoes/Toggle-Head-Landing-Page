@@ -12,12 +12,13 @@ import {
     FaYoutube,
     FaQuora
 } from "react-icons/fa6";
-
+import footer_img from "../../../assets/Footer/footer.png"
 const Footer = () => {
     return (
         <>
-            <div className={`${style.bg_color}`}>
-                <div className={`${style.footer_padding} container`}>
+            <div className={`${style.bg_color}  `}>
+                <img src={footer_img} className={`${style.img} absolute`} alt="" />
+                <div className={`${style.footer_padding} container relative  index`}>
                     <div className={`${style.grid}`}>
 
                         <div className={`card ${style.contact_card}`}>
@@ -52,7 +53,7 @@ const Footer = () => {
                             <h4>Head Office</h4>
 
                             <div className={`${style.gap}`}>
-                                <div className='flex gap'>
+                                <div className={`${style.office_gap} flex gap`}>
                                     <FaLocationDot />
                                     <p>
                                         Lorem ipsum dolor sit amet, consetetur sadipscing
@@ -60,21 +61,21 @@ const Footer = () => {
                                     </p>
                                 </div>
 
-                                <div className='flex gap'>
+                                <div className={`${style.office_gap} flex gap`}>
                                     <FaClock />
                                     <p>
                                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr
                                     </p>
                                 </div>
 
-                                <div className='flex gap'>
+                                <div className={`${style.office_gap} flex gap`}>
                                     <FaRegClock />
                                     <p>
                                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr
                                     </p>
                                 </div>
 
-                                <div className='flex gap'>
+                                <div className={`${style.office_gap} flex gap`}>
                                     <FaTrain />
                                     <p>
                                         Lorem ipsum asd asdsaweeg Lorem Ipsum
@@ -88,9 +89,9 @@ const Footer = () => {
             </div >
             <div className={`${style.bottom_bar}`}>
                 <div className="container">
-                    <p>© 2021 All Rights Reserved. <a href="">Privacy Policy</a></p>
+                    <p>© 2021 All Rights Reserved. Privacy Policy</p>
                 </div>
-            </div>
+            </div >
         </>
     )
 }

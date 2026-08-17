@@ -13,10 +13,11 @@
     display: flex;
     flex-direction: column;
     gap: 6px;
+    width: 90%;
 }
 
 .label {
-    font-size: 14px;
+    font-size: 16px;
     color: #1a3a6b;
     font-weight: 400;
 }
@@ -35,8 +36,8 @@
 }
 
 .description {
-    font-size: 14px;
-    color: #4a5568;
+    font-size: 12px;
+    color: #606a79;
     line-height: 1.6;
-    margin-top: 4px;
+    font-weight: 100;
 }
